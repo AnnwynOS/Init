@@ -1,0 +1,21 @@
+[package]
+name = "Init"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "init"
+path = "src/main.rs"
+
+[dependencies]
+# annwyn = { package = "libannwyn", path = "../libannwyn" }
+annwyn = { package = "libannwyn", git = "https://github.com/AnnwynOS/LibAnnwyn", branch = "main" }
+
+[profile.release]
+panic = "abort"
+opt-level = "s"
+lto = true
+strip = true
+
+[profile.dev]
+panic = "abort"
