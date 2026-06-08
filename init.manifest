@@ -1,0 +1,11 @@
+NAME=init
+VERSION=0.1.0
+
+CAP_REQ=IpcEndpoint:SEND|RECEIVE
+
+CAP_EXP=service://system/init
+CAP_EXP=service://system/log
+
+SANDBOX=no_raw_disk
+SANDBOX=no_raw_network
+SANDBOX=no_gpu_direct

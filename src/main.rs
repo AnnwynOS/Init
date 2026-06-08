@@ -5,8 +5,8 @@ use annwyn::{log, yield_now, exit, endpoint_create};
 
 #[unsafe(no_mangle)]
 pub extern "C" fn _start() -> ! {
-    log("≺INIT≻ Aster init started\n");
-    
+    log("≺INIT≻ Annwyn init started\n");
+
     let ep_system = endpoint_create();
     if ep_system < 0 {
         log("≺INIT≻ ERROR: failed to create system endpoint\n");
