@@ -36,7 +36,7 @@ check: abo
 
 install: abo
 	@KERNEL_DIR=$${ANNWYN_KERNEL_DIR:-../muKernel}; \
-	DEST=$$KERNEL_DIR/assets; \
+	DEST=$$KERNEL_DIR/src/assets; \
 	mkdir -p $$DEST; \
 	cp $(ABO_OUT) $$DEST/init.abo; \
 	echo "==> Installed to $$DEST/init.abo"

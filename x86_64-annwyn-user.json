@@ -6,15 +6,14 @@
   "target-pointer-width": 64,
   "target-c-int-width": 32,
   "os": "none",
-  "env": "aster",
+  "env": "annwyn",
   "executables": true,
   "linker-flavor": "ld.lld",
   "linker": "rust-lld",
   "pre-link-args": {
-    "ld.lld": ["-Tinit.ld"]
+    "ld.lld": ["-Tsrc/init.ld"]
   },
   "panic-strategy": "abort",
   "disable-redzone": true,
-  "relocation-model": "static",
-  "features": "-mmx,-sse,+soft-float"
+  "relocation-model": "static"
 }
